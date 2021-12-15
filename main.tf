@@ -18,7 +18,9 @@ data "archive_file" "archivefile" {
 }
 
 module "archivefile" {
-  
+  source = "."
+
+  filedirecatory = ""
 }
 
 output "result" {
